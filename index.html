@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style.css">    
+    
+    <link rel="stylesheet" href="script.js">   
+    <title>CADASTRE-SE</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" />
+    <link href="{{ url_for('static',filename='styles/style4.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="nomesite"><img src="https://scontent.fgig4-1.fna.fbcdn.net/v/t39.30808-6/290923801_3608846552683471_7867552714787157238_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=ck4GxZDAW80AX_lL15m&_nc_ht=scontent.fgig4-1.fna&oh=00_AT_k6liswVIrAhJ9GGhSbu7dAucOk0754r5zpConAzfq9A&oe=62F87E18"><h1>ANDRÉ</h1></div>
+        <a href="/inicio"><div><h2>Início</h2></a></div>
+        <a href="/pag1"><div><h2>Página2</h2></div></a>
+        <div id="pag2"><h2>Página3</h2></div>
+    </header>
+    <h1 id="message">Site de teste André luiz:</h1>
+    <form class="form" method="POST" action="http://localhost:5000/addprod" enctype='multipart/form-data'>
+        <label>Nome completo:<br><input type="text" id="prodname" name="prodname"></label>
+        <label>Idade:<br><input type="number" id="prodprice" name="prodprice"></label>
+        <label>Endereço:<br><input type="text" id="prodcat" name="prodcat"> </label>
+        <label>Insira sua foto:<br><input type="file" id="prodimg" name="prodimg"></label>
+        <button type="submit">ADD</button>
+    </form>
+    <footer>
+        Copyright © 2022 andrépinnola.com LTDA <br>
+    </footer>
+</body>
+</html>
